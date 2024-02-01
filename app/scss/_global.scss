@@ -1,0 +1,42 @@
+html {
+  width: 100vw;
+  font-size: 62.5%; // = 10px
+  box-sizing: border-box;
+  font-family:'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  @include respond(tablet) {
+    font-size: 62.5%;
+  }
+  @include respond(mobile) {
+    font-size: 62.5%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  scroll-behavior: smooth;
+  max-width: 160rem;
+  margin: 8rem auto;
+  font-size: $font-md;
+  background-color: $color-light-cream;
+
+  @include respond(tablet) {
+    max-width: 76.8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  @include respond(mobile) {
+    max-width: 37.5rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}

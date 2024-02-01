@@ -1,0 +1,16 @@
+{
+  "name": "gb-shop-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch:sass": "sass --watch app/scss/style.scss dist/style.css",
+    "compile:sass": "sass app/scss/style.scss dist/style.comp.css"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}
