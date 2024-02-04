@@ -1,38 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="dist/style.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">
-      <header id="header">
-        <div class="logo"><img src="src/logo.png" alt="logo"></div>
-        <div class="brand">BRAN<span class="letter">D</span></div>
-        <div class="browse-btn">Browse</div>
-        <input type="text" id="search-text" placeholder="Search for Item...">
-        <div class="search-icon"><img src="src/fa_search.png" alt="search-icon">
-        </div>
-        <div class="cart-icon">
-          <img src="src/cart.png" alt="cart-icon">
-        </div>
-        <div class="acc-btn">My Account</div>
-      </header>
 
-      <section class="menubar"></section>
-      <section class="navigation"></section>
-      <section class="content"></section>
-      <section class="also-like"></section>
-      <section class="subscribe"></section>
-      <section class="footer"></section>
-      <footer id="footer"></footer>
-    </div>
-    <!-- <script type="module" src="/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <header id="header">
+      <div class="logo"><img src="src/logo.png" alt="logo"></div>
+      <div class="brand">BRAN<span class="letter">D</span></div>
+      <div class="browse-btn">Browse</div>
+      <input type="text" id="search-text" placeholder="Search for Item...">
+      <div class="search-icon"><img src="src/fa_search.png" alt="search-icon">
+      </div>
+      <div class="cart-icon">
+        <img src="src/cart.png" alt="cart-icon">
+      </div>
+      <div class="acc-btn">My Account</div>
+    </header>
+
+    <section class="menubar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Man</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Accoseriese</a></li>
+        <li><a href="#">Featured</a></li>
+        <li><a href="#">Hot</a></li>
+        <li><a href="#">Deals</a></li>
+      </ul>
+    </section>
+    <section class="navigation">
+      <div class="navigation__header">New Arrivals</div>
+      <div class="navigation__crumbs">Home / Men / <span>Arrivals</span></div>
+    </section>
+    <section class="content">
+      <div class="content__pic">
+        <img src="src/pic_1.png" alt="pic_1">
+      </div>
+      <div class="content__card">
+        <div class="content__card-title">WOMEN COLLECTION</div>
+        <div class="content__card-line"></div>
+        <div class="content__card-product-title">Moschino Cheap And Chic</div>
+        <div class="content__card-product-description">Compellingly actualize fully researched processes before
+          proactive outsourcing. Progressively syndicate collaborative
+          architectures before cutting-edge services. Completely visualize parallel core competencies rather than
+          exceptional
+          portals.</div>
+        <div class="content__card-product-details">
+          <div>MATERIAL: <span>COTTON</span></div>
+          <div>DESIGNER: <span>BINBURHAN</span></div>
+        </div>
+        <div class="content__card-product-price">$561</div>
+        <div class="content__card-line2"></div>
+        <div class="content__card-product-options">
+          <div class="option">
+            <div class="header">CHOOSE COLOR</div>
+            <select class="select-option">Red</select>
+          </div>
+          <div class="option">
+            <div class="header">CHOOSE SIZE</div>
+            <select class="select-option">XXL</select>
+          </div>
+          <div class="option">
+            <div class="header">QUANTITY</div>
+            <input class="select-option" value="2"></input>
+          </div>
+        </div>
+        <div class="content__card-button">
+          <div class="content__card-button-icon"><img src="src/cart_icon.png" alt="cart-icon"></div>
+          <div class="content__card-button-text">ADD TO CART</div>
+        </div>
+      </div>
+    </section>
+    <section class="also-like">
+      <div class="header">you may like also</div>
+      <div class="product-cards">
+        <div class="card">
+          <div class="pic"><img src="src/pic_2.png" alt=""></div>
+          <div class="header">BLAZE LEGGINGS</div>
+          <div class="price">$52.00</div>
+        </div>
+
+        <div class="card">
+          <div class="pic"><img src="src/pic_3.png" alt=""></div>
+          <div class="header">BLAZE LEGGINGS</div>
+          <div class="price">$52.00</div>
+        </div>
+
+        <div class="card">
+          <div class="pic"><img src="src/pic_4.png" alt=""></div>
+          <div class="header">BLAZE LEGGINGS</div>
+          <div class="price">$52.00</div>
+        </div>
+
+        <div class="card">
+          <div class="pic"><img src="src/pic_5.png" alt=""></div>
+          <div class="header">BLAZE LEGGINGS</div>
+          <div class="price">$52.00</div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="left-side">
+        <div class="pic">
+          <img src="src/ellipse_3_2941.png" alt="">
+        </div>
+        <div class="text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+        <div class="sign">Bin Burhan <br/><span> Dhaka, Bd</span></div>
+      </div>
+      <div class="right-side">
+        <div class="header">Subscribe <br/><span>FOR OUR NEWLETTER AND PROMOTION</span></div>
+        <div class="input">
+          <input type="text" placeholder="Enter Your Email">
+          <div class="button">Subscribe</div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      
+    </section>
+    <footer id="footer"></footer>
+  </div>
+  <!-- <script type="module" src="/main.js"></script> -->
+</body>
+
 </html>

@@ -1,0 +1,294 @@
+.content {
+  @include flex-center();
+  flex-direction: column;
+  margin: 0 auto;
+  position: absolute;
+
+  &__pic {
+    width: 1600px;
+    height: 777px;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    @include flex-center();
+  }
+
+  &__card {
+    width: 1141px;
+    height: 730px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    position: relative;
+    top: -8rem;
+    z-index: 2;
+
+    @include flex-center();
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 10rem;
+
+    &-title {
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #f16d7f;
+      margin-bottom: 1.6rem;
+    }
+
+    &-line {
+      width: 63px;
+      height: 3px;
+      background-color: #ef5b70;
+      margin-bottom: 1.6rem;
+    }
+
+    &-product-title {
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #4d4d4d;
+      margin-bottom: 3rem;
+    }
+
+    &-product-description {
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #5e5e5e;
+      margin-bottom: 3rem;
+    }
+
+    &-product-details {
+      @include flex-center();
+      margin: 0 auto;
+      gap: 5rem;
+      margin-bottom: 3rem;
+      > div {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #b9b9b9;
+
+        > span {
+          color: #2f2f2f;
+        }
+      }
+    }
+
+    &-product-price {
+      font-family: Lato;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ef5b70;
+      margin-bottom: 3rem;
+    }
+
+    &-product-options {
+      @include flex-center();
+      margin: 0 auto;
+      gap: 5rem;
+      margin-bottom: 3rem;
+
+      .option {
+        .header {
+          font-family: Lato;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 700;
+          color: #2f2f2f;
+          margin: 1rem;
+        }
+
+        .select-option {
+          width: 144px;
+          height: 35px;
+          background-color: #ffffff;
+          border: 1px solid #eaeaea;
+        }
+      }
+    }
+
+    &-button {
+      width: 537px;
+      height: 55px;
+      background-color: #ffffff;
+      border: 1px solid #ef5b70;
+      text-align: center;
+      padding: 16px;
+      cursor: pointer;
+      @include flex-center();
+      gap: 10px;
+
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ef5b70;
+    }
+  }
+}
+
+.also-like {
+  width: 1600px;
+  position: absolute;
+  bottom: -140rem;
+  z-index: 5;
+
+  .header {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .product-cards {
+    @include flex-center();
+    margin: 0 auto;
+    gap: 5rem;
+
+    .card {
+      width: 263px;
+      height: 364px;
+      background-color: #ffffff;
+
+      .pic {
+        width: 261px;
+        height: 280px;
+        background-color: #e9e9e9;
+        @include flex-center();
+      }
+
+      .header {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #6f6e6e;
+      }
+
+      .price {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #f16d7f;
+      }
+    }
+  }
+}
+
+.subscribe {
+  max-width: 100%;;
+  height: 438px;
+  background-color: rgba(242, 242, 242, 0.5);
+  z-index: 10;
+
+  position: absolute;
+  bottom: -200rem;
+
+  @include flex-center();
+  margin: 0 auto;
+  gap: 2rem;
+
+  .left-side {
+    @include flex-center();
+    flex-direction: column;
+    margin: 0 auto;
+
+    .pic {
+    }
+
+    .text {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.025em;
+      color: #222224;
+    }
+
+    .sign {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: #f16d7f;
+
+      > span {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #222224;
+      }
+    }
+  }
+
+  .right-side {
+    @include flex-center();
+    flex-direction: column;
+    margin: 0 auto;
+
+    .header {
+      text-align: center;
+      font-family: Lato;
+      font-size: 24px;
+      line-height: 54px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #222224;
+
+      > span {
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+      }
+    }
+
+    .input {
+      @include flex-center();
+      margin: 0 auto;
+
+      input {
+        width: 334px;
+        height: 46px;
+        background-color: #e1e1e1;
+        border-radius: 23px;
+        position: absolute;
+      }
+
+      .button {
+        text-align: center;
+        width: 104px;
+        height: 46px;
+        background-color: #f16d7f;
+        border-radius: 0px 23px 23px 0px;
+        cursor: pointer;
+
+        position: relative;
+        left: 160px;
+
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 54px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+      }
+    }
+  }
+}
